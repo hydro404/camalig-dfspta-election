@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DFSPTA Election</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    html, body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    body {
+      background: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    h4 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 600;
+      color: #1c53b9;
+      font-size: 1rem;
+    }
+
+    .btn-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 400px; /* stays nice on larger screens */
+      margin: 0 auto;
+    }
+
+    .btn-3d {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 20px;
+      font-weight: 600;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform .08s ease, box-shadow .12s ease;
+      user-select: none;
+      width: 100%; /* full width buttons */
+    }
+
+    .btn-black {
+      background: #0b0b0b;
+      color: #fff;
+      box-shadow: 0 8px 0 rgba(0,0,0,0.15), 0 12px 24px rgba(0,0,0,0.25);
+    }
+
+    .btn-white {
+      background: #ffffff;
+      color: #0b0b0b;
+      box-shadow: 0 8px 0 rgba(0,0,0,0.06), 0 12px 24px rgba(0,0,0,0.12);
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .btn-3d:active {
+      transform: translateY(4px);
+      box-shadow: 0 4px 0 rgba(0,0,0,0.08), 0 8px 16px rgba(0,0,0,0.12);
+    }
+
+    .btn-3d:hover {
+      transform: translateY(-2px);
+    }
+
+    /* 📱 Mobile adjustments */
+    @media (max-width: 576px) {
+      h1 { font-size: 1.5rem; }
+      h4 { font-size: 0.9rem; }
+      .btn-3d {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main style="height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+    <div style="width: 100%; max-width: 500px;" class="px-md-0 px-4">
+      <h1>DFSPTA Election</h1>
+      <h4>Camalig National High School</h4>
+      <div class="btn-stack">
+        <a class="btn-3d btn-black" href="https://forms.gle/fqQGuiz5nRMJvu8h7" target="_blank"><i class="bi bi-person-badge-fill"></i> President</a>
+        <a class="btn-3d btn-white" href="https://forms.gle/Bn9cbG1qXco9iSs99" target="_blank"><i class="bi bi-people-fill"></i> Vice President</a>
+        <a class="btn-3d btn-black" href="https://forms.gle/rSPGmvUKjVjAJFoL7" target="_blank"><i class="bi bi-journal-text"></i> Secretary</a>
+        <a class="btn-3d btn-white" href="https://forms.gle/XBXm1UZ34n8Nf7db8" target="_blank"><i class="bi bi-cash-coin"></i> Treasurer</a>
+        <a class="btn-3d btn-black" href="https://forms.gle/D9PDM4HzAbuA9vhG9" target="_blank"><i class="bi bi-shield-check"></i> Auditor</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
